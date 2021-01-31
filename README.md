@@ -38,9 +38,7 @@ Following libraries are needed:
 - from plotly.graph_objs import Pie
 
 ## Project Motivation<a name="motivation"></a>
-
-
-
+The goal of this webapplication is to classifie messages writen by people or media into different categories. This is especially interesting if a disaster occurs. In such situations there are many messages in a short timewindow. Some messages might be urgent and need some attention. So it can be very helpful if there is an automatic classification to transfer important messages to the right people or organisations.
 
 ## File Descriptions <a name="files"></a>
 
@@ -76,10 +74,10 @@ The run.py file is for running the webapp and can be used as follows:
 
 'python run.py'
 
-## Results<a name="results"></a>
+The machine learning model is used to classifie entrys in entrybox into the different categories. 
 
+## Results<a name="results"></a>
 At the website there are plotted two graphs to give an overview over the dataset. The first is a pie plot to show the relative amount of the different categories. The second plot shows the amount of the three genres 'direct', 'social' and 'news' for each category. 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
-
 I thank figure8 for offering the data.
