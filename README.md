@@ -82,4 +82,4 @@ At the website there are plotted two graphs to give an overview over the dataset
 By typing in a sentence or a word into the empty entry box, some related categories are popping up green. It is not working for all sentences or words. This might be due to the lack of training data. 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
-I thank figure8 for offering the data.
+I thank Figure Eight Inc. for offering the data.
