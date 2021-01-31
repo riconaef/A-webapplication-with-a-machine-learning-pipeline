@@ -45,7 +45,6 @@ Following libraries are needed:
 ## File Descriptions <a name="files"></a>
 
 #### The data folder
-
 This folder contains three files:
 - disaster_categories.csv
 - disaster_messages.csv
@@ -57,7 +56,6 @@ The process_data.py file cleans the data and stores it in a database. It can be 
 The three additional arguments are the two locations of the csv files and the pathname for the sql database.
 
 #### The models folder
-
 This folder contains one file:
 - train_classifier.py
 This file sets up a machine learning pipeline, trains it and saves the model to a pickle file. For running, following command can be used:
@@ -81,4 +79,4 @@ At the website there are plotted two graphs to give an overview over the dataset
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
-I thank airbnb for offering the data. You can find the Licensing for the data and other descriptive information at the Kaggle link available [here](https://www.kaggle.com/airbnb/seattle/data). You can also use the code here and run the model by yourself. Maybe you even have an idea for adjustments or improvements. 
+I thank figure8 for offering the data.
