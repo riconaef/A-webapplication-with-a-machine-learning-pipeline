@@ -79,5 +79,7 @@ The machine learning model is used to classifie entrys in entrybox into the diff
 ## Results<a name="results"></a>
 At the website there are plotted two graphs to give an overview over the dataset. The first is a pie plot to show the relative amount of the different categories. The second plot shows the amount of the three genres 'direct', 'social' and 'news' for each category. 
 
+By typing in a sentence or a word into the empty entry box, some related categories are popping up green. It is not working for all sentences or words. This might be due to the lack of training data. 
+
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 I thank figure8 for offering the data.
