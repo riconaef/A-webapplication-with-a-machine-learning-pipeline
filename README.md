@@ -13,27 +13,27 @@ The code should run in Python 3 with no problems. No additional packages are nee
 Follwoing are the used libraries:
 - import numpy as np
 - import pandas as pd
-import re
-import pickle
-from sqlalchemy import create_engine
+- import re
+- import pickle
+- from sqlalchemy import create_engine
 
-from nltk.tokenize import word_tokenize
-from nltk.stem import WordNetLemmatizer
-from sklearn.multioutput import MultiOutputClassifier
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.tree import DecisionTreeClassifier
+- from nltk.tokenize import word_tokenize
+- from nltk.stem import WordNetLemmatizer
+- from sklearn.multioutput import MultiOutputClassifier
+- from sklearn.ensemble import RandomForestClassifier
+- from sklearn.tree import DecisionTreeClassifier
 
-from sklearn.model_selection import train_test_split
-from sklearn.metrics import classification_report
-from sklearn.pipeline import Pipeline, FeatureUnion
-from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
-from sklearn.model_selection import GridSearchCV
+- from sklearn.model_selection import train_test_split
+- from sklearn.metrics import classification_report
+- from sklearn.pipeline import Pipeline, FeatureUnion
+- from sklearn.feature_extraction.text import CountVectorizer, TfidfTransformer
+- from sklearn.model_selection import GridSearchCV
 
-from flask import Flask
-from flask import render_template, request, jsonify
-from plotly.graph_objs import Bar
-from plotly.graph_objs import Pie
-import plotly.graph_objs as go
+- from flask import Flask
+- from flask import render_template, request, jsonify
+- from plotly.graph_objs import Bar
+- from plotly.graph_objs import Pie
+- import plotly.graph_objs as go
 
 ## Project Motivation<a name="motivation"></a>
 
