@@ -11,8 +11,8 @@
 The code should run in Python 3 with no problems. No additional packages are needed. 
 
 Follwoing are the used libraries:
-import numpy as np
-import pandas as pd
+- import numpy as np
+- import pandas as pd
 import re
 import pickle
 from sqlalchemy import create_engine
