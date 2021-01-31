@@ -1,3 +1,5 @@
+# Disaster Response Pipeline Project
+
 ### Table of Contents
 
 1. [Installation](#installation)
@@ -39,16 +41,51 @@ Following libraries are needed:
 
 
 
+
 ## File Descriptions <a name="files"></a>
 
-The used data consists of two dataframes (listings and calendar) and can be downloaded here. The calendar dataframe is a large file, 
-thus it was separated into two files.
+#### The data folder
 
-The steps of the analysis can be viewed in the Crisp_DM_history.ipynb file. There is also a single jupyter file for each question to generate the desired plots.
+This folder contains three files:
+
+- disaster_categories.csv
+- disaster_messages.csv
+- process_data.py
+
+The process_data.py file cleans the data and stores it in a database. It can be run with the following command: 
+
+'python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db'
+
+The three additional arguments are the two locations of the csv files and the pathname for the sql database.
+
+#### The models folder
+
+This folder contains one file:
+
+- train_classifier.py
+
+This file sets up a machine learning pipeline, trains it and saves the model to a pickle file. For running, following command can be used:
+
+python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+
+'The two additional arguments are the location of the database and a pathname for the pickle file'
+
+#### The app folder
+
+This folder contains a 'templates' folder with two html files:
+
+- go.html
+- master.html
+
+These files are being used for the frontend visualization.
+
+The run.py file is for running the webapp and can be used as follows:
+
+'python run.py'
 
 ## Results<a name="results"></a>
 
-The main findings of the results can also be found [here](https://naefrico.medium.com/what-drives-prices-at-airbnb-accommodations-c60e4589a099).
+At the website there are plotted two graphs to give an overview over the dataset. The first is a pie plot to show the relative amount of the different categories. The second plot shows the amount of the three genres 'direct', 'social' and 'news' for each category. 
 
 ## Licensing, Authors, Acknowledgements<a name="licensing"></a>
 
