@@ -47,11 +47,9 @@ Following libraries are needed:
 #### The data folder
 
 This folder contains three files:
-
 - disaster_categories.csv
 - disaster_messages.csv
 - process_data.py
-
 The process_data.py file cleans the data and stores it in a database. It can be run with the following command: 
 
 'python data/process_data.py data/disaster_messages.csv data/disaster_categories.csv data/DisasterResponse.db'
@@ -61,24 +59,18 @@ The three additional arguments are the two locations of the csv files and the pa
 #### The models folder
 
 This folder contains one file:
-
 - train_classifier.py
-
 This file sets up a machine learning pipeline, trains it and saves the model to a pickle file. For running, following command can be used:
 
-python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl
+'python models/train_classifier.py data/DisasterResponse.db models/classifier.pkl'
 
-'The two additional arguments are the location of the database and a pathname for the pickle file'
+The two additional arguments are the location of the database and a pathname for the pickle file
 
 #### The app folder
-
 This folder contains a 'templates' folder with two html files:
-
 - go.html
 - master.html
-
 These files are being used for the frontend visualization.
-
 The run.py file is for running the webapp and can be used as follows:
 
 'python run.py'
