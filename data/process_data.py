@@ -35,6 +35,8 @@ def clean_data(df):
 
     df = df.drop('categories', axis=1) #drop old categories column
     df = pd.concat([df, categories], axis=1) #put messages dataframe together with the new categories
+    
+    df['related'] = df['related'].replace(2,1) #Convert the "related" column into bynary numbers
 
     return df
 
